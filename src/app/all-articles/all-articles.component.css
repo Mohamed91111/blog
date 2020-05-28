@@ -1,0 +1,26 @@
+#all{
+   
+    padding-left: 140px;
+    font-weight: bold;
+    
+
+}
+#allArt{
+    
+    padding-left: 20px;
+    
+    
+}
+#deleteButton{
+    
+    background-color: darkred;
+    float:right;
+}
+.grid{
+    border: 3px solid snow;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: snow;
+    opacity: 0.7;
+}

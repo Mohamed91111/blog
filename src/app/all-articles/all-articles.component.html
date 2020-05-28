@@ -1,0 +1,10 @@
+
+<div id="allArt">
+<div class="grid" *ngFor="let all of Article">   
+ <strong>{{all.title}}</strong>  
+ <div id="deleteButton">
+ <button  (click)="deleteArticleButton(all.title)">Delete</button>
+ </div>
+
+</div>
+</div>

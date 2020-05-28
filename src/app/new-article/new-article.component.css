@@ -1,0 +1,33 @@
+h1{
+    color: #885887;
+    
+}
+.lessons-list{
+    font-weight: bold;
+    font-size: 40px;
+    color: #934561;
+    text-align: center;
+    border: 3px solid cadetblue;
+    border-radius: 10px;
+    background-color: snow;
+    opacity: 0.8;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.sample-app-content{
+    padding-left: 140px;
+    border: 3px solid cadetblue;
+    border-radius: 10px;
+    background-color: snow;
+    opacity: 0.8;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+#input{
+    display:block;
+    padding-right: 100px;
+    
+}
+.events{
+    padding-bottom: 25px;
+}

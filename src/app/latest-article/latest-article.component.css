@@ -1,0 +1,18 @@
+#start{
+    color: darkblue;
+    padding-left: 140px;
+    
+    
+}
+#startArt{
+    padding-left: 52px;
+    border: 3px solid cadetblue;
+    font-size: 20px;
+    margin-top: 45px;
+    border-radius: 10px;
+    background-color: snow;
+    opacity: 0.7;
+}
+#startArt li{
+    padding-top: 12px;
+}

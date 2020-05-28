@@ -1,0 +1,49 @@
+<ng-template #loading>
+    <section class="sample-app-content">
+    <h1>Add the new Article </h1>
+    <!--title part validation-->
+     <form #f="ngForm">
+         <div *ngIf="title.errors?.minlength">
+            Name must be at least 10 characters long.
+         </div> 
+         <p>
+            <label>Title:</label>
+            <input type="text" id="input" minlength="10" placeholder="minimum 10 characters" 
+                [(ngModel)]="all.title" name="title" #title="ngModel" required>     
+          </p>
+        <!--Author part validation-->
+        <p>
+            <label>Author:</label>
+            <input type="text" id="input" 
+                [(ngModel)]="all.author" name="author" #author="ngModel">
+        </p>
+        <!--Events part validation-->
+        <div *ngIf="Events.errors?.minlength">
+            Minimum 20 characters required
+        </div>
+
+         <label>Article:</label>
+            <input  type="text" id="input" class="events"
+                [(ngModel)]="all.Events" name="Events" #Events="ngModel"required>
+         
+       <!--Time part validation-->
+        <div>
+            <p>
+            <label>time:</label>
+            <input type="number" id="input" 
+                [(ngModel)]="all.time" name="time" #time="ngModel" required>
+        </p>
+        <div *ngIf="time.invalid && time.touched">
+            Only numbers are allowed (0-9)
+            </div>
+        </div>
+        <p>
+            <button type="submit" [disabled]="!f.valid" (click)="submitForm()">Submit</button>
+        </p>
+    </form>
+</section>
+</ng-template>
+ <!--hiding the create article form using ng-template and ngIf-->
+<div class="lessons-list" *ngIf="!lessons; else loading">
+    <p>login first</p> 
+  </div>

@@ -1,0 +1,20 @@
+#start{
+    color: #934561;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 40px;
+    border: solid;
+    border-radius: 24px;
+    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: snow;
+    opacity: 0.8;
+
+}
+button {
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin-bottom: 23px;
+}

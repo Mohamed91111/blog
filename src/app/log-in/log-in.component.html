@@ -1,0 +1,13 @@
+<div id="start">
+    <h2>{{loginoutMessage}}</h2>
+ <div  *ngIf="loggIn">
+
+    <p> Are you sure that you are the blogger? </p>
+    <button (click)="loggInButton()">Yes! I am the blogger.</button>
+
+ </div>
+ <div *ngIf="loggOut">
+     <button (click)="loggOutButton()">LogOut</button>
+
+ </div>   
+</div>
